@@ -1,0 +1,197 @@
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaecee !important;
+}
+
+.logo-img {
+    height: 200px;
+    width: auto;
+}
+
+.navbar {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    border-bottom: none !important;
+}
+
+#navbarNav {
+    text-align: center;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 6rem;
+    margin: 20px auto;
+    width: 90%;
+    background-color: #f0f0f0;
+    list-style: none;
+    border: none;
+    gap: 12px;
+}
+
+.intro-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.intro-parrafo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.peluqueria-inicio {
+    padding: 6rem;
+    margin: 20px auto;
+    width: 90%;
+    background-color: #f0f0f0;
+    list-style: none;
+    border: none;
+    
+}
+
+.manos-inicio {
+    padding: 6rem;
+    margin: 20px auto;
+    width: 90%;
+    background-color: #f0f0f0;
+    list-style: none;
+    border: none;
+}
+
+.maquillaje-inicio {
+    padding: 6rem;
+    margin: 20px auto;
+    width: 90%;
+    background-color: #f0f0f0;
+    list-style: none;
+    border: none;
+}
+
+.lookbook {
+    padding: 6rem;
+    margin: 3rem;
+    background-color: #f0f0f0;
+    list-style: none;
+    border: none;
+}
+
+footer {
+    background-color: #424949;
+    color: #f0f0f0;
+}
+
+.footer-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+    width: 90%;
+    justify-items: center;
+}
+
+.marcas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+    width: 90%;
+    gap: 60px
+}
+
+.social-media-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-titulo, .intro-parrafo {
+        align-items: center;
+    }
+
+    .footer-info {
+        grid-template-columns: 1fr;
+    }
+
+        .marcas {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+.intro-servicios, .intro-productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin: 5px auto;
+    width: 90%;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.peluqueria-servicios, .manos-servicios, .maquillaje-servicios, .kerastase-productos, .schwarzkopf-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: 10px auto;
+    width: 90%;
+    background-color: #f0f0f0;
+}
+
+.footer-info-servicios, .footer-info-productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+    width: 90%;
+    justify-items: center;
+    gap: 20px;
+}
+
+.marcas-servicios, .marcas-productos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+}
+
+.marcas-servicios img, .marcas-productos img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 768px) {
+  .marcas-servicios, .marcas-productos{
+    flex-direction: column; 
+    align-items: center; 
+  }
+}
+
+
+
+
+    
+
+
+
