@@ -7,7 +7,7 @@ body {
 }
 
 .logo-img {
-    height: 200px;
+    height: 300px;
     width: auto;
 }
 
@@ -37,6 +37,10 @@ body {
     flex-wrap: wrap;
     width: 100%;
     min-height: 400px;
+}
+
+.titulo-quienes-somos {
+    font-display: swap;
 }
 
 .video-quienes-somos,
@@ -91,6 +95,10 @@ p {
 }
 
 @media (max-width: 768px) {
+    .logo-img {
+        height: 10rem
+    }
+
     .intro {
         width: 90%;
         padding: 2rem;
@@ -98,12 +106,13 @@ p {
 
     .video-parrafo {
         flex-direction: column;
+
     }
 
     .video-quienes-somos,
     .parrafo-quienes-somos {
         width: 100%;
-        padding: 10px;
+        padding: 1px;
     }
 
     .video-quienes-somos video {
