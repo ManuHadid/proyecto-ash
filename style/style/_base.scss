@@ -1,0 +1,17 @@
+body {
+  font-family: $font-main;
+  margin: 0;
+  padding: 0;
+  background-color: $color-fondo !important;
+}
+
+h2 {
+  font-family: $font-titulos;
+  font-style: italic;
+}
+
+p,
+.lista-serivicios,
+.lista-productos {
+  font-family: $font-main;
+}

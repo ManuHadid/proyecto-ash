@@ -1,0 +1,17 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin section-style {
+  padding: 4rem;
+  margin: 20px auto;
+  width: 90%;
+  background-color: $color-claro;
+  min-height: 500px;
+  border: 1px solid $color-texto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

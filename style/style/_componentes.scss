@@ -1,0 +1,25 @@
+.logo-img {
+  height: 300px;
+  width: auto;
+
+  @media (max-width: 768px) {
+    height: 10rem;
+  }
+}
+
+.navbar {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-bottom: none !important;
+}
+
+#navbarNav {
+  text-align: center;
+  font-size: large;
+}
+
+.social-media-links {
+  @include flex-center;
+  flex-direction: row;
+  gap: 20px;
+}
