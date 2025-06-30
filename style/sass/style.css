@@ -1,0 +1,170 @@
+footer .social-media-links, footer .marcas, .intro .video-parrafo .parrafo-quienes-somos, .intro .video-parrafo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaecee !important;
+}
+
+.logo-img {
+  height: 300px;
+  width: auto;
+}
+
+.navbar {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-bottom: none !important;
+}
+
+#navbarNav {
+  text-align: center;
+  font-size: large;
+}
+
+.intro {
+  padding: 4rem;
+  margin: 20px auto;
+  width: 90%;
+  background-color: #f0f0f0;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+.intro .video-parrafo {
+  flex-wrap: wrap;
+  min-height: 400px;
+}
+.intro .video-parrafo .video-quienes-somos,
+.intro .video-parrafo .parrafo-quienes-somos {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.intro .video-parrafo video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+.intro .video-parrafo .parrafo-quienes-somos h2 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.intro .video-parrafo .parrafo-quienes-somos p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.peluqueria-inicio,
+.manos-inicio,
+.maquillaje-inicio {
+  padding: 4rem;
+  margin: 20px auto;
+  width: 90%;
+  background-color: #f0f0f0;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.lookbook {
+  padding: 6rem;
+  margin: 20px auto;
+  width: 90%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: #424949;
+  color: #f0f0f0;
+}
+footer .footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 90%;
+  gap: 1.5rem;
+}
+footer .footer-info > * {
+  flex: 1 1 calc(33.333% - 1.5rem);
+  min-width: 220px;
+}
+footer .marcas {
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+footer .marcas img {
+  width: clamp(120px, 20%, 200px);
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer .social-media-links {
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 10rem;
+  }
+  .intro,
+  .peluqueria-inicio,
+  .manos-inicio,
+  .maquillaje-inicio,
+  .lookbook {
+    padding: 2rem;
+  }
+  .video-parrafo {
+    flex-direction: column;
+  }
+  .video-parrafo .video-quienes-somos,
+  .video-parrafo .parrafo-quienes-somos {
+    width: 100%;
+    padding: 1px;
+  }
+  .video-parrafo video {
+    height: auto;
+  }
+  footer .footer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer-info > * {
+    flex: 1 1 100%;
+    min-width: auto;
+  }
+  footer .marcas {
+    gap: 2rem;
+  }
+  footer .marcas img {
+    width: 60%;
+    max-width: 180px;
+  }
+  footer .social-media-links {
+    gap: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
