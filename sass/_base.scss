@@ -6,12 +6,14 @@ body {
 }
 
 h2 {
-  font-family: $font-titulos;
+  font-family: $font-titular;
   font-style: italic;
 }
 
 p,
 .lista-serivicios,
-.lista-productos {
+.lista-productos,
+.navbar-nav.ms-auto {
   font-family: $font-main;
+  list-style: none;
 }

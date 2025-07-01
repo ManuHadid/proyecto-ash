@@ -1,0 +1,109 @@
+.intro,
+.peluqueria-inicio,
+.manos-inicio,
+.maquillaje-inicio,
+.kerastase-productos,
+.schwarzkopf-productos,
+.peluqueria-servicios,
+.manos-servicios,
+.maquillaje-servicios {
+  padding: 4rem;
+  margin: 20px auto;
+  width: 90%;
+  background-color: $color-secundario;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid $color-borde;
+
+  @media (max-width: 768px) {
+    padding: 2rem;
+  }
+}
+
+.intro-servicios,
+.intro-productos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  margin: 5px auto;
+  width: 90%;
+  background-color: $color-secundario;
+  text-align: center;
+  border: 1px solid $color-borde;
+}
+
+footer {
+  background-color: $color-footer;
+  color: $color-footer-texto;
+
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    margin: 0 auto;
+    width: 90%;
+    gap: 1.5rem;
+
+    > * {
+      flex: 1 1 calc(33.333% - 1.5rem);
+      min-width: 220px;
+    }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+
+      > * {
+        flex: 1 1 100%;
+        min-width: auto;
+      }
+    }
+  }
+}
+
+.footer-info-servicios,
+.footer-info-productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 90%;
+  justify-items: center;
+  gap: 20px;
+}
+
+.marcas,
+.marcas-servicios,
+.marcas-productos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+
+  img {
+    width: clamp(120px, 20%, 200px);
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+
+    @media (max-width: 768px) {
+      width: 60%;
+      max-width: 180px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}

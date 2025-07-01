@@ -1,0 +1,95 @@
+.logo-img {
+  height: 300px;
+  width: auto;
+
+  @media (max-width: 768px) {
+    height: 10rem;
+  }
+}
+
+.navbar {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-bottom: none !important;
+}
+
+#navbarNav {
+  text-align: center;
+  font-size: large;
+}
+
+.video-parrafo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 400px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.titulo-quienes-somos {
+  font-display: swap;
+}
+
+.video-quienes-somos,
+.parrafo-quienes-somos {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 1px;
+  }
+}
+
+.video-quienes-somos {
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+
+    @media (max-width: 768px) {
+      height: auto;
+    }
+  }
+}
+
+.parrafo-quienes-somos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+}
+
+.intro-titulo,
+.intro-parrafo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
+}
+
+.social-media-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
