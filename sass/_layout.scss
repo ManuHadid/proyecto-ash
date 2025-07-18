@@ -1,44 +1,85 @@
-.intro,
-.peluqueria-inicio,
-.manos-inicio,
-.maquillaje-inicio,
-.kerastase-productos,
-.schwarzkopf-productos,
-.peluqueria-servicios,
-.manos-servicios,
-.maquillaje-servicios {
-  padding: 4rem;
-  margin: 20px auto;
-  width: 90%;
-  background-color: $color-secundario;
-  min-height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px solid $color-borde;
+// layout.scss
+.navbar {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  border-bottom: none !important;
+}
 
-  @media (max-width: 768px) {
-    padding: 2rem;
+#navbarNav {
+  text-align: center;
+  font-size: large;
+}
+
+.video-parrafo {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 400px;
+  @include respond-to(phone) {
+    flex-direction: column;
   }
 }
 
-.intro-servicios,
-.intro-productos {
+.video-quienes-somos,
+.parrafo-quienes-somos {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+  @include respond-to(phone) {
+    width: 100%;
+    padding: 1px;
+  }
+}
+
+.video-quienes-somos video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  @include respond-to(phone) {
+    height: auto;
+  }
+}
+
+.parrafo-quienes-somos {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro-titulo,
+.intro-parrafo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  @include respond-to(phone) {
+    align-items: center;
+  }
+}
+
+.social-media-links {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+}
+
+.intro {
   padding: 3rem;
-  margin: 5px auto;
+  margin: 20px auto;
   width: 90%;
-  background-color: $color-secundario;
-  text-align: center;
-  border: 1px solid $color-borde;
+  min-height: 500px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  border: 1px solid $border-color;
 }
 
 footer {
-  background-color: $color-footer;
-  color: $color-footer-texto;
-
+  background-color: $color-footer-bg;
+  color: $color-footer-text;
   .footer-info {
     display: flex;
     flex-wrap: wrap;
@@ -54,7 +95,7 @@ footer {
       min-width: 220px;
     }
 
-    @media (max-width: 768px) {
+    @include respond-to(phone) {
       flex-direction: column;
       align-items: center;
 
@@ -96,14 +137,15 @@ footer {
     height: auto;
     object-fit: contain;
 
-    @media (max-width: 768px) {
+    @include respond-to(phone) {
       width: 60%;
       max-width: 180px;
     }
   }
 
-  @media (max-width: 768px) {
+  @include respond-to(phone) {
     flex-direction: column;
     align-items: center;
   }
 }
+

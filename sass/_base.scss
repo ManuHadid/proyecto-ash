@@ -1,19 +1,28 @@
 body {
-  font-family: $font-main;
+  font-family: $font-primary;
   margin: 0;
   padding: 0;
-  background-color: $color-fondo !important;
+  background-color: $bg-color;
 }
 
-h2 {
-  font-family: $font-titular;
+h1, h2 {
+  font-family: $font-secondary;
   font-style: italic;
+  text-align: center;
 }
 
 p,
 .lista-serivicios,
 .lista-productos,
 .navbar-nav.ms-auto {
-  font-family: $font-main;
+  font-family: $font-primary;
   list-style: none;
+}
+
+.logo-img {
+  height: 300px;
+  width: auto;
+  @include respond-to(phone) {
+    height: 10rem;
+  }
 }

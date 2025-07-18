@@ -1,95 +1,142 @@
-.logo-img {
-  height: 300px;
-  width: auto;
+// componentes.scss
 
-  @media (max-width: 768px) {
-    height: 10rem;
-  }
-}
-
-.navbar {
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
-  border-bottom: none !important;
-}
-
-#navbarNav {
-  text-align: center;
-  font-size: large;
-}
-
-.video-parrafo {
+.servicios-inicio {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  min-height: 400px;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 1rem; 
+  max-width: 90%;
+  margin: 3rem auto;
+  flex-direction: row;
+  row-gap: 1rem;
+  padding: 3rem;
+  border: 1px solid $border-color;
+}
 
-  @media (max-width: 768px) {
-    flex-direction: column;
+.servicio {
+  padding: 3rem 1rem;
+  border-bottom: 1px solid #eee;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+
+  &:hover {
+    transform: scale(1.03);
   }
-}
 
-.titulo-quienes-somos {
-  font-display: swap;
-}
-
-.video-quienes-somos,
-.parrafo-quienes-somos {
-  width: 50%;
-  box-sizing: border-box;
-  padding: 20px;
-
-  @media (max-width: 768px) {
+  img {
     width: 100%;
-    padding: 1px;
-  }
-}
-
-.video-quienes-somos {
-  video {
-    width: 100%;
-    height: 100%;
+    height: 250px;
     object-fit: cover;
-    display: block;
-    border-radius: 12px;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+    transition: transform 0.4s ease, opacity 0.4s ease;
 
-    @media (max-width: 768px) {
+    &:hover {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+
+    @include respond-to(phone) {
       height: auto;
     }
   }
-}
 
-.parrafo-quienes-somos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+  h3 {
+    font-size: 1.8rem;
+    font-family: $font-secondary;
+    font-style: italic;
+    text-align: center;
   }
 
-  p {
-    font-size: 1.25rem;
-    line-height: 1.6;
+  @include respond-to(phone) {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
-.intro-titulo,
-.intro-parrafo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.servicios-servicios {
+  padding: 3rem 1rem;
+  border: 1px solid $border-color;
+  margin: 2rem auto;
+  width: 90%;
+}
 
-  @media (max-width: 768px) {
-    align-items: center;
+.carousel-inner img {
+  height: $carousel-img-height-desktop;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  @include respond-to(phone) {
+    height: $carousel-img-height-mobile;
   }
 }
 
-.social-media-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+.titulo-servicio {
+  font-size: 2.05rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+
+  @include respond-to(phone) {
+    font-size: 1.5rem;
+  }
 }
+
+.lista-servicios {
+  font-size: 1.20rem;
+  line-height: 1.8;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+
+  div {
+    margin-bottom: 0.5rem;
+  }
+
+  @include respond-to(phone) {
+    font-size: 1rem;
+  }
+}
+
+.productos-kerastase {
+  max-width: 100%; 
+  margin: 0 auto; 
+  padding: 2rem 1rem;
+
+  img {
+    max-height: 400px; 
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+}
+
+.productos-schwarzkopf {
+  img {
+    max-height: 500px; 
+    object-fit: cover;
+    margin-bottom: 2rem;
+  }
+}
+
+.carousel {
+  max-width: 65%; 
+  margin: 0 auto;
+
+  @include respond-to(phone) {
+    max-width: 100% !important;
+    width: 100vw !important;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.productos-kerastase,
+.productos-schwarzkopf {
+  @include respond-to(phone) {
+    width: 100vw !important;
+    padding: 1rem 0;
+  }
+}
+
